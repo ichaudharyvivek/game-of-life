@@ -64,6 +64,9 @@ def main():
                 if event.key == pygame.K_q:
                     pygame.quit()
 
+                if event.key == pygame.K_r:
+                    main()
+
             if pygame.mouse.get_pressed()[0]:
                 pos = pygame.mouse.get_pos()
                 cells[pos[1]//10, pos[0]//10] = 1
